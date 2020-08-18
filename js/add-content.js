@@ -16,3 +16,16 @@ if (hourNow > 18) {
 }
 
 document.write('<h3>' + greeting + '</h3>');
+
+var response = prompt('Would you like a house or a hotel?');
+var item;
+
+if (response === 'house') {
+  item = '<img src ="images/house.png">';
+} else if (response === 'hotel') {
+  item = '<img src ="images/hotel.png">';
+} else {
+  item = 'No house or hotel for you!';
+}
+
+document.write('<p>' + item + '</p>');
